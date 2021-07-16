@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: rgb(4, 121, 255);
+    padding: 6px 0 6px 20px;
+    color: #fff;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+section h2 {
+    color: rgb(4, 121, 255);
+}
+
+.wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+article {
+    border-radius: 8px;
+    margin: 15px 10px;
+    background: #F8F9FA;
+    ;
+    padding: 15px 10px;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+.input-inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-inline>label {
+    color: rgb(4, 121, 255);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn-submit {
+    width: fit-content;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+    padding: 8px 16px;
+    border: 2px solid rgb(4, 121, 255);
+    color: #000000;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: rgb(4, 121, 255);
+    color: #fff;
+}
+
+input[type=text],
+input[type=date] {
+    border: 1px solid;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input[type=text],
+input[type=date] .btn-submit:focus {
+    outline: none;
+}
+
+.list-item {
+    overflow-y: scroll;
+    height: 70%;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 10px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.item h3,
+.item h5,
+.item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.item h3 {
+    color: rgb(4, 121, 255);
+}
+
+article>img {
+    height: 80px;
+}
+
+article>span>h2 {
+    display: inline;
+    color: dodgerblue;
+    margin-bottom: auto;
+    position: relative;
+    bottom: 30px;
+    margin: 15px;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper {
+        margin-top: 30px;
+    }
+}
